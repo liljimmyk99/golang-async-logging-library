@@ -92,9 +92,9 @@ func (al Alog) ErrorChannel() <-chan error {
 func (al Alog) Stop() {
 	al.shutdownCh <- struct{}{}
 	go func(al Alog) {
-		if msg := <-al.shutdownCompleteCh; msg != nil {
+		//if msg := <-al.shutdownCompleteCh; msg != nil {
 
-		}
+		//}
 	}(al)
 }
 
